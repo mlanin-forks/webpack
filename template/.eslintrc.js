@@ -51,5 +51,18 @@ module.exports = {
     {{/if_eq}}
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+  },
+  globals: {
+    'fetch': false,
+    'localStorage': false,
+    'console': false,
+    '$': false,
+    'alert': false,
+    'reject': false,
+    'resolve': false,
+    'Image': false,
+    'FileReader':false,
+    'FormData': false,
+    'XMLHttpRequest': false
   }
 }
